@@ -1,0 +1,17 @@
+{
+  "name": "pinyin-docker",
+  "version": "1.0.0",
+  "description": "pinyin docker",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Avan <layouwen@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "pinyin": "2.11.1"
+  },
+  "devDependencies": {
+    "node-gyp": "^9.3.0"
+  }
+}
