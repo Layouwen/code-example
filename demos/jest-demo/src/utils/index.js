@@ -1,31 +1,38 @@
-import axios from 'axios'
-export * from './fetchData'
-export * from './math'
+import axios from "axios";
+import People from "./People";
+export * from "./fetchData";
+export * from "./math";
 
 export const callBackFn = (cb) => {
-  cb()
-}
+  cb();
+};
 
 export const callBackFnHasReturn = (cb) => {
-  return cb()
-}
+  return cb();
+};
 
 export const getConfig = () => {
   return {
-    host: '127.0.0.1',
-    port: 3000
-  }
-}
+    host: "127.0.0.1",
+    port: 3000,
+  };
+};
 
 export const fetchCustomData = () => {
-  return axios.get('http://www.baidu.com')
-}
+  return axios.get("http://www.baidu.com");
+};
 
 export const timerExec = (timer = 1000, cb) => {
   setTimeout(() => {
-    cb()
+    cb();
     setTimeout(() => {
-      cb()
-    }, timer)
-  }, timer)
-}
+      cb();
+    }, timer);
+  }, timer);
+};
+
+export const createPeople = () => {
+  const people = new People("layouwen");
+  console.log(people.getName());
+  return people;
+};
