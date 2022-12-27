@@ -7,6 +7,7 @@ specifiers:
   axios: ^1.2.1
   babel-jest: ^29.3.1
   jest: ^29.3.1
+  prettier: ^2.8.1
 
 dependencies:
   axios: 1.2.1
@@ -17,6 +18,7 @@ devDependencies:
   '@types/jest': 29.2.4
   babel-jest: 29.3.1_@babel+core@7.20.7
   jest: 29.3.1
+  prettier: 2.8.1
 
 packages:
 
@@ -2926,6 +2928,12 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: true
+
+  /prettier/2.8.1:
+    resolution: {integrity: sha512-lqGoSJBQNJidqCHE80vqZJHWHRFoNYsSpP9AjFhlhi9ODCJA541svILes/+/1GM3VaL/abZi7cpFzOpdR9UPKg==}
+    engines: {node: '>=10.13.0'}
+    hasBin: true
     dev: true
 
   /pretty-format/29.3.1:
