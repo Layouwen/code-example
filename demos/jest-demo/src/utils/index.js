@@ -1,3 +1,4 @@
+import axios from 'axios'
 export * from './fetchData'
 export * from './math'
 
@@ -14,4 +15,8 @@ export const getConfig = () => {
     host: '127.0.0.1',
     port: 3000
   }
+}
+
+export const fetchCustomData = () => {
+  return axios.get('http://www.baidu.com')
 }
