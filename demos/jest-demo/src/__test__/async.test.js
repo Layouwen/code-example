@@ -1,4 +1,4 @@
-import { fetch404, fetchData } from '../fetchData'
+import { fetch404, fetchData } from '../utils'
 
 test('async fetch', async () => {
   const res = await fetchData()

@@ -1,4 +1,4 @@
-import { add } from '../math'
+import { add } from '../utils'
 
 test('value equal', () => {
   expect(add(1, 2)).toBe(3)
