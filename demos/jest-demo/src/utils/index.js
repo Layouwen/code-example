@@ -20,3 +20,12 @@ export const getConfig = () => {
 export const fetchCustomData = () => {
   return axios.get('http://www.baidu.com')
 }
+
+export const timerExec = (timer = 1000, cb) => {
+  setTimeout(() => {
+    cb()
+    setTimeout(() => {
+      cb()
+    }, timer)
+  }, timer)
+}
