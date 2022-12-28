@@ -4,3 +4,4 @@
 - pinyin-docker
 - jest-demo
 - playwright-demo
+- cypress-demo

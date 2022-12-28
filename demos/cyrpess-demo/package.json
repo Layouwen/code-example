@@ -1,0 +1,15 @@
+{
+  "name": "cyrpess-demo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cypress:open": "cypress open"
+  },
+  "devDependencies": {
+    "cypress": "^12.2.0"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
