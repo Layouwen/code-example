@@ -6,7 +6,8 @@
   "scripts": {
     "test": "playwright test",
     "test:debug": "playwright test --debug",
-    "test:report": "playwright show-report"
+    "test:report": "playwright show-report",
+    "codegen": "playwright codegen http://lp.locnavi.com:3126/#/user/login"
   },
   "keywords": [],
   "author": "",
