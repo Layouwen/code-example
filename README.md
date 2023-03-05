@@ -7,3 +7,4 @@
 - [cypress-demo](cypress-demo/README.md)
 - [mqtt](demos/mqtt/README.md)
 - [web-service](demos/web-service/README.md)
+- [chat-apt-openai](demos/chatgpt/README.md)
