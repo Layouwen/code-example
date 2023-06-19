@@ -13,4 +13,9 @@ fn main() {
     let c = [2, 1];
     let [b0, b1] = c;
     println!("{}", b0 + b1);
+
+    // 综合
+    let t = ([1; 2], [3; 4]);
+    let (d, _) = t;
+    println!("{}", d[0] + t.1[0]);
 }
