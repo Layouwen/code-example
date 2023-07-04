@@ -9,16 +9,27 @@ const targetUrls = ['http://localhost:7823/this-a', 'http://localhost:7824/this-
 app.use('/jieshou', (req, res) => {
   const requests = targetUrls.map(targetUrl => {
     return new Promise((resolve, reject) => {
-      proxy.web(req, res, { target: targetUrl }, err => {
-        reject(err)
+      proxy.web(req, res, { target: targetUrl }, (err, req, res) => {
+        if (err) {
+          reject(err)
+        } else {
+          resolve()
+        }
       })
     })
   })
 
-  Promise.all(requests).catch(err => {
-    console.error('Error forwarding request:', err)
-    res.status(500).send('Error forwarding request')
-  })
+  Promise.all(requests)
+    .then(() => {
+      console.log('All requests forwarded successfully')
+    })
+    .catch(err => {
+      console.error('Error forwarding request:', err)
+      res.status(500).send('Error forwarding request')
+    })
+    .finally(() => {
+      res.end()
+    })
 })
 
 // 启动服务器
