@@ -1,0 +1,28 @@
+{
+  "name": "rtsp-to-h264-flv-service",
+  "version": "1.0.0",
+  "description": "",
+  "bin": "main.js",
+  "scripts": {
+    "build": "pkg ."
+  },
+  "keywords": [],
+  "author": {
+    "name": "Avan",
+    "email": "layouwen@gmail.com",
+    "url": "https://github.com/layouwen"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "pkg": "^5.8.1"
+  },
+  "pkg": {
+    "targets": [
+      "node16-alpine-x64",
+      "node16-linux-x64",
+      "node16-macos-arm64",
+      "node16-macos-x64"
+    ],
+    "outputPath": "bin"
+  }
+}

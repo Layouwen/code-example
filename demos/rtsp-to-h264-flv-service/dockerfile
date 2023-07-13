@@ -1,0 +1,10 @@
+FROM --platform=linux/amd64 ubuntu:latest
+RUN sed -i 's/archive.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list && \
+  sed -i 's/security.ubuntu.com/mirrors.aliyun.com/g' /etc/apt/sources.list
+RUN apt-get update 
+RUN apt-get install -y ffmpeg
+WORKDIR /
+COPY bin /bin
+ENTRYPOINT ["/bin/rtsp-to-h264-flv-service-linux-x64"]
+
+# docker build -t rtsp-to-h264-flv-service:1.0.0 .
